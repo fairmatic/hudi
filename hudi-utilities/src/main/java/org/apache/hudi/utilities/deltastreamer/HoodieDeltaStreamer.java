@@ -373,8 +373,8 @@ public class HoodieDeltaStreamer implements Serializable {
     @Parameter(names = {"--checkpoint"}, description = "Resume Delta Streamer from this checkpoint.")
     public String checkpoint = null;
 
-    @Parameter(names = {"--disable-hoodie-commit-checkpoint"}, description = "Disable reading checkpoint from " +
-            ".hoodie commit timeline and do not write checkpoint to .hoodie commit timeline")
+    @Parameter(names = {"--disable-hoodie-commit-checkpoint"}, description = "Disable reading checkpoint from "
+        + ".hoodie commit timeline and do not write checkpoint to .hoodie commit timeline")
     public Boolean disableHoodieTimelineCheckpoint = false;
 
     @Parameter(names = {"--initial-checkpoint-provider"}, description = "subclass of "
